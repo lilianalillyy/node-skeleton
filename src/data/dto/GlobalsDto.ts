@@ -5,7 +5,7 @@ export class GlobalsDto {
         public hello: string
     ) {}
 
-    public fromGlobals(globals: Globals): GlobalsDto {
+    public static fromGlobals(globals: Globals): GlobalsDto {
         return new GlobalsDto(globals.getHello())
     }
 }
